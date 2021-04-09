@@ -1,7 +1,8 @@
 import {auth} from './Init'
 import {UserDatabase, ChatDatabase} from './Database'
-import Registration from './Registration'
 import Authentication from './Authentication'
+import Registration from './Registration'
+
 
 export class User{
 
