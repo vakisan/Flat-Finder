@@ -1,4 +1,20 @@
 
+@media (min-width: 1200px){
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1040px;
+}
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .mt-xs-5 { 
+    margin-top: 2em; 
+  }
+  .mb-xs-5 { 
+    margin-top: 1em; 
+  }
+  .feedback{
+    font-size: 1.5em !important;
+  }
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,8 +23,169 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-pre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  z-index: 2;
+}
+.navbar-brand{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.75em;
+  color: #fff !important;
+}
+.navbar-brand-post{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25em;
+  font-weight:600;
+  color: #3c7e94 !important;
+}
+.navbar-item, .nav-link {
+  font-size: .9rem;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  text-transform: normal;
+  letter-spacing: 0;
+  transition: all .15s linear;
+}
+.nav-custom{
+  position: fixed;
+  width: 100%;
+}
+.nav-link-custom{
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+.nav-link-custom:hover{
+  color: #dadada !important;
+}
+.section {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-shaped {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: #3c7e94;
+}
+
+.landing-container{
+  padding-top: 6rem !important;
+}
+.gradient-landing{
+  background: #348F50; 
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  
+  background: linear-gradient(to right, #56B4D3, #348F50); 
+  color: #fff;
+}
+.register{
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+.register:hover{
+  text-transform: uppercase;
+  background: #e2e2e2;
+  color: #000;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+  transition: 15ms;
+}
+
+.login{
+  text-transform: uppercase;
+  background: #56b4d3;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+.login:hover{
+  text-transform: uppercase;
+  background: #89cbe0;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+  transition: 15ms;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: .625rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cad1d7;
+  border-radius: .25rem;
+  box-shadow: none;
+  
+}
+.section-feedback{
+  margin-top: 1em;
+  height: 500px;
+  background: url("https://rigbyandrigby.com/wp-content/uploads/2019/08/115_Ap3-6-Charles-Street-HR-4-1800x1170.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.steps{
+  border: 1px solid #338a4d;
+  border-radius: 50%;
+  width: 75px;
+  padding: 1em;
+  text-align:center;
+  margin: auto;
+  background: #348F50;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.feedback{
+  font-size: 1.75em;
+  font-weight:600;
+  color: rgb(85, 84, 84);
+}
+.feedback-name{
+  font-size: 1.25em;
+  color: rgb(85, 84, 84);
+}
+.feedback-dp{
+  height: 150px;
+  width: 150px;
+
+}
+.login-card{
+  background: #f4f5f7;
+}
+.footer-custom{
+  background: #f4f5f7;
+  padding: 2em;
 }

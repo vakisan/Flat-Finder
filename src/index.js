@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import './assets/css/index.css';
-import './assets/scss/info.scss';
 
+import './assets/scss/info.scss';
+import './assets/css/index.css';
 
 import Index from './front/App';
 import Register from './front/Register';
+import Listing from './front/Listing';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -19,6 +20,11 @@ ReactDOM.render(
         path="/Register"
         exact
         render={props => <Register {...props} />}
+      />
+      <Route
+        path="/Listing"
+        exact
+        render={props => <Listing {...props} />}
       />
       <Redirect to="/" />
     </Switch>

@@ -26,25 +26,25 @@ const MainNavbar = (props) => {
 
   return (
     <header className="header-global">
-      <Navbar expand="md" className="navbar navbar-pre navbar-light navbar-expand-lg nav-custom">
+      <Navbar color="light" light expand="md">
       <Container>
-      <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
+      <NavbarBrand className="mr-lg-5 navbar-brand-post" to="/" tag={Link}>
         FlatFinder
       </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className=" align-items-lg-center" navbar>
             <NavItem>
-              <NavLink to="/" tag={Link} className="nav-link-custom">Home</NavLink>
+              <NavLink to="/Listing" tag={Link}>Listings</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/Register" tag={Link} className="nav-link-custom">Register</NavLink>
+              <NavLink to="/Register" tag={Link}>Profile</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/About" tag={Link} className="nav-link-custom">About Us</NavLink>
+              <NavLink to="/About" tag={Link}>Messages</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/Listing" tag={Link} className="nav-link-custom">Listing</NavLink>
+              <NavLink to="/Listing" tag={Link}>Logout</NavLink>
             </NavItem>
 
           </Nav>

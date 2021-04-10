@@ -1,20 +1,19 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col, Card, CardTitle, CardText, Button, CardHeader, CardBody, Form, FormGroup, Label, Input, Badge } from "reactstrap";
 
 import Navbar from "../components/Menu/MainNavbar";
-import Login from "./Login";
+import Landing from "./Landing";
+
+
 
 
 function App() {
   return (
     <>
     <Navbar />
-    <div>
-      Landing page with login card
-    <Login />
-    </div>
+    <Landing />
     </>
   );
 }
